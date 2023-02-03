@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "allowJs": true,
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "importHelpers": true,
+        "module": "esnext",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "paths": {
+            "@/*": ["./src/*"],
+            "style/*": ["./src/style/*"]
+        },
+        "lib": ["esnext", "dom", "dom.iterable"]
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["node_modules", "**/node_modules/*"]
+}

@@ -1,0 +1,36 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint/eslint-plugin", "prettier"],
+    "env": {
+        "browser": true
+    },
+    "extends": ["eslint-config-airbnb-base", "prettier"],
+    "rules": {
+        // https://stackoverflow.com/questions/59265981/typescript-eslint-missing-file-extension-ts-import-extensions
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "prettier/prettier": "error"
+    },
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./"
+    },
+    "ignorePatterns": ["webpack.config.js"],
+    "settings": {
+        "import/resolver": {
+            "typescript": {},
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    }
+}
