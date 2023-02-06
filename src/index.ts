@@ -31,15 +31,15 @@ gsap.to('.slide', {
 	scrollTrigger: {
 		trigger: '.slides-container',
 		start: 'top top',
-		snap: {
-			snapTo: 1 / (SLIDE_COUNT - 1),
-			duration: 0.5,
-			delay: 0.25,
-			// ease: 'power1.inOut',
-		},
+		// snap: {
+		// 	snapTo: 1 / (SLIDE_COUNT - 1),
+		// 	duration: 0.5,
+		// 	delay: 0.25,
+		// 	// ease: 'power1.inOut',
+		// },
+		// markers: true,
 		pin: true,
 		scrub: true,
-		markers: true,
 	},
 	ease: 'none',
 	xPercent: -100 * (SLIDE_COUNT - 1),
