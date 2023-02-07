@@ -31,6 +31,7 @@ gsap.to('.slide', {
 	scrollTrigger: {
 		trigger: '.slides-container',
 		start: 'top top',
+		end: '+=3500',
 		// snap: {
 		// 	snapTo: 1 / (SLIDE_COUNT - 1),
 		// 	duration: 0.5,
